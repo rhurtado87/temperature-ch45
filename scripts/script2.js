@@ -18,7 +18,7 @@ function decrease(){
 function sayHi(){
     let userName=prompt("Enter your name:");
 
-    console.log("Wecolme ... " +userName);
+    console.log("Wecolme.... " +userName);
 }
 
 function multiByThree(){
