@@ -5,6 +5,10 @@ let counter = 0;
 function increase(){
     counter++;
     console.log(counter);
+    document.getElementById("total").innerHTML=counter;
+    if(counter==5){
+        console.log("hi 5");
+    }
     
 }
 function decrease(){
@@ -20,7 +24,7 @@ function sayHi(){
 
     console.log("Wecolme.... " +userName);
 }
-
+// run a Multi by Three
 function multiByThree(){
     let number = prompt("Enter number:"); //get the number form a prompt
     let result = number*3; //mulite the number by 3
@@ -38,4 +42,11 @@ function addTwo(){
     console.log(`The sum of ${num1} and ${num2} is ${sum}`);
     document.getElementById("addtotal").innerHTML=sum;
     
+}
+//create a funtion to Contert Temperature C to F
+function celsToFahr(){
+    let temperature = parseInt(prompt('Enter temperature in Celsius'));
+    let fahrenheit = (temperature * 9/5) + 32.;
+    console.log(fahrenheit);
+    document.getElementById("temp").innerHTML=fahrenheit;
 }
