@@ -3,20 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mystyles.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Convert</title>
 </head>
 <body>
-    <img src="../img/fandctempconversion.jpg" alt="temp">
-    <div>
-        <button onclick="celsToFahr()">C to F</button>
+<main>
+    <div id="thermometer-container">
+        <div id="thermometer">
+            <div id="temperatureMarker"></div>
+        </div>
+    <div id="container">
+        <img src="#" alt="Sunset Image">
+        <h2>Convert Celsius to Fahrenheit</h2>
+
+        <label for="temperatureInput">Convert Celsius to Fahrenheit</label>
+        <input type="number" id="temperatureInput" placeholder="Enter temperature">
+        <br>
+        <label>Select Scale:</label> <br>
+        <input type="radio" name="scale" value="C" checked> Celsius
+        <input type="radio" name="scale" value="F"> Fahrenheit<br>
+
+        <button class="btn" onclick="convertTemperature()">Convert</button>
+
+        <div id="result"></div>
     </div>
-    <div>
-        <h1>Convert Temperature</h1>
-        <p id="total"></p>
-    </div>
-        <!-- <scrip src="./scripts/script2.js"></script>-->
-            <!-- <script src="../scripts/script2.js"></script> -->
-            <script src="../scripts/script3.js"></script>
+
+    <script src="../scripts/script5.js"></script>
+</main> 
 </body>
 </html>
